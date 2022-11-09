@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*colors:  1:#142850* 2:#27496D 3:#0C7B93 4:#00A8cc*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(#27496D , #0C7B93 , #00A8cc);
+    margin-top: 10%;
+    justify-content: center;
+}
+.welcome{
+    
+    width: 400px;
+    height: max-content;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: #000000;
+}
