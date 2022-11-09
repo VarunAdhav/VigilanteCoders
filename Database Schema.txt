@@ -1,0 +1,19 @@
+https://vigilantecoders-default-rtdb.firebaseio.com/:{
+    Users: {
+        UserId:{
+            EmailID: Email Id , 
+            FirstName: First Name;
+            Gender: Gender,
+            LastName: Last Name,
+            PhoneNumber:Phno
+        },
+        MmqaksJFtOdsbhIK8vieieUK4XL2:{
+                EmailID:"tvarun2002@gmail.com" , 
+                FirstName: "holla";
+                Gender: "Male",
+                LastName:"Varun",
+                PhoneNumber:"7788554466"
+            }
+
+    }
+}
