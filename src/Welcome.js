@@ -1,7 +1,7 @@
-let username = localStorage.getItem("Name");
+/*let username = localStorage.getItem("Name");
 console.log(username);
-//username = username.toString();
+username = username.toString();
 
-//const Name = username;
-
-//document.getElementById("info").innerHTML = username;
+const Name = username;
+alert(Name)*/
+document.getElementById("info").innerHTML = localStorage.getItem("Name");
