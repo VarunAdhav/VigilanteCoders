@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
 import {getAuth  ,  createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
-import {getDatabase , ref , set , get , child} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+import {getDatabase , ref , set} from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
 
 const firebaseapp = initializeApp({
     apiKey: "AIzaSyD4R56cce3iLf3U_KWex5yhky_Wn2U2uo4",
@@ -37,25 +37,7 @@ function Upload(){
   /*alert("Your account is Signed Up successfully...")
   window.location.href = "/dist/SignIn.html";*/
 
-  const dbRef = ref(getDatabase());
-      //var userId = user.uid;
-      //console.log(userId);
-      get(child(dbRef, `Users/${userId}`)).then((snapshot) => {
-        if (snapshot.exists()) {
-          //console.log(snapshot.val());
-          var Name = snapshot.val().FirstName + " " + snapshot.val().LastName;
-          //console.log(Name);
-          localStorage.setItem("Name" , Name);
-          setTimeout( function() { window.location.href = "/dist/Welcome.html" }, 5000 );
-        } else {
-          console.log("No data available");
-        }
-        //window.location.href = '/dist/Welcome.html';
-      }).catch((error) => {
-        console.error(error);
-      });
-
-  //setTimeout( function() { window.location.href = "/dist/Welcome.html" }, 5000 );
+  setTimeout( function() { window.location.href = "/dist/Welcome.html" }, 5000 );
 
 
 }
