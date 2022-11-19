@@ -39,7 +39,7 @@ const firebaseapp = initializeApp({
         } else {
           console.log("No data available");
         }
-        window.location.href = '/dist/Welcome.html';
+        window.location.href = '/dist/Menu.html';
       }).catch((error) => {
         console.error(error);
       });
