@@ -29,7 +29,8 @@ const firebaseapp = initializeApp({
       
       const dbRef = ref(getDatabase());
       var userId = user.uid;
-      //console.log(userId);
+      console.log(userId);
+      localStorage.setItem("UserId" , userId);
       get(child(dbRef, `Users/${userId}`)).then((snapshot) => {
         if (snapshot.exists()) {
           //console.log(snapshot.val());
